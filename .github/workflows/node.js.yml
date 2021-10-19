@@ -27,7 +27,7 @@ jobs:
       with:
         os: [ubuntu-latest, windows-2016]
       - uses: actions/upload-artifact@master
-        with:
+    needs: build
           name: webpack artifacts
           path: public/
         cache: 'npm'
